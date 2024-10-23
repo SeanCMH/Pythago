@@ -1,1 +1,1 @@
-Simple program to calculate and visualize the pythagoram theorem.
+A Simple program to calculate and visualize the Pythagorean theorem.
