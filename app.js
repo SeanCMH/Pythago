@@ -3,7 +3,7 @@ const inputLength2 = document.getElementById("input-length-2");
 const submitButton = document.getElementById("submit-button");
 const triangleOutput = document.getElementById("triangle-output");
 
-
+submitButton.onclick = getValues;
 document.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
     event.preventDefault();
@@ -15,7 +15,7 @@ let outputLength1;
 let outputLength2;
 let outputLength3;
 
-let getValues = () => {
+function getValues() {
     outputLength1 = parseFloat(inputLength1.value);
     outputLength2 = parseFloat(inputLength2.value);
     
@@ -24,8 +24,6 @@ let getValues = () => {
     updateTriangleOutput();
     drawTriangle();  
 }
-
-submitButton.onclick = getValues;
 
 // Oppdaterer teksten under input feltene med hypotenusens lengde:
 let updateTriangleOutput = () => {
