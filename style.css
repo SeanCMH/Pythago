@@ -1,5 +1,4 @@
-#triangle-container{
-  position: absolute;
-  width: 80%;
-  height: 80%;
+#display-svg {
+  height: 100vh;
+  width: 100vw;
 }
